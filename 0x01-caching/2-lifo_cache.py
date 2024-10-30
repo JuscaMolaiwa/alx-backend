@@ -12,8 +12,7 @@ class LIFOCache(BaseCaching):
     """
     
     def __init__(self):
-        """Sets up the LIFO cache instance.
-        """
+        """Sets up the LIFO cache instance."""
         super().__init__()
         self.cache_data = OrderedDict()
 
@@ -41,3 +40,4 @@ class LIFOCache(BaseCaching):
         Returns None if the key is not present.
         """
         return self.cache_data.get(key, None)
+
